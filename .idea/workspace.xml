@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/OrderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/BaseTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/LoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/PurchaseTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/RegisterTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/DriverInitialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/Random.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test-all.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test-sanity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test-smoke.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2u2rc4IdveLrVmrr15FL3SNKar2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 06] Selenium WebDriver\Task - Selenium WebDriver\src\test\resources" />
+      <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 06] Selenium WebDriver\Task - Selenium WebDriver\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 06] Selenium WebDriver\Task - Selenium WebDriver\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/test-all.xml">
+    <configuration name="C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/test-all.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task - Selenium WebDriver" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-all.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/test-sanity.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task - Selenium WebDriver" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-sanity.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/test-smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task - Selenium WebDriver" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-smoke.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task - Selenium WebDriver" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTests.userCannotRegisterWithAlreadyRegisteredUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task - Selenium WebDriver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.RegisterTests" />
+      <option name="METHOD_NAME" value="userCannotRegisterWithAlreadyRegisteredUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/test-all.xml" />
+        <item itemvalue="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/test-smoke.xml" />
+        <item itemvalue="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/test-sanity.xml" />
+        <item itemvalue="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 06] Selenium WebDriver/Task - Selenium WebDriver/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.RegisterTests.userCannotRegisterWithAlreadyRegisteredUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="" />
+      <created>1741457589707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741457589707</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/OrderPage.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
