@@ -1,4 +1,4 @@
-package com.epam.tat.module6.utils;
+package com.epam.tat.module6.model;
 
 public class Customer {
 
@@ -12,10 +12,6 @@ public class Customer {
         this.country = country;
         this.city = city;
         this.creditCard = creditCard;
-    }
-
-    public static Customer createDefaultCustomer() {
-        return new Customer("Diego", "Colombia", "Cali", "1234 5678 9012 3456");
     }
 
     public String getName() {

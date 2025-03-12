@@ -1,4 +1,4 @@
-package com.epam.tat.module6.utils;
+package com.epam.tat.module6.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
