@@ -1,8 +1,6 @@
 package com.epam.tat.module6.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -26,9 +24,16 @@ public class CartPage extends BasePage{
         click(placeOrderButton);
     }
     public void deleteOneProduct(int productNumber) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[normalize-space()='Delete'])["+ productNumber +"]")))
-                .click();
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("(//a[normalize-space()='Delete'])["+ productNumber +"]")));
+
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[normalize-space()='Delete'])["+ productNumber +"]")))
+                    .click();
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("(//a[normalize-space()='Delete'])["+ productNumber +"]")));
+
+        } catch (TimeoutException | NoSuchElementException e) {
+            log.error("Element was not found.");
+            throw new RuntimeException("Test has been stopped.", e);
+        }
     }
 
     public String getTotalAmount() {
@@ -45,7 +50,14 @@ public class CartPage extends BasePage{
     }
 
     public String getProductPrice (int productNumber) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//td[3])[" + productNumber + "]"))).getText();
+
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//td[3])[" + productNumber + "]"))).getText();
+
+        } catch (TimeoutException | NoSuchElementException e) {
+            log.error("Element was not found.");
+            throw new RuntimeException("Test has been stopped.", e);
+        }
     }
 
     public int getNumberOfProductsInCart() {
@@ -53,7 +65,14 @@ public class CartPage extends BasePage{
     }
 
     private WebElement findProductByName(String name) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[normalize-space()='"+ name +"']")));
+
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[normalize-space()='"+ name +"']")));
+
+        } catch (TimeoutException | NoSuchElementException e) {
+            log.error("Element was not found.");
+            throw new RuntimeException("Test has been stopped.", e);
+        }
     }
 
     private List<Integer> getProductPrices() {
@@ -76,6 +95,13 @@ public class CartPage extends BasePage{
     }
 
     private List<WebElement> getTotalOfProductsInCar() {
-        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("(//td[3])")));
+
+        try {
+            return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("(//td[3])")));
+
+        } catch (TimeoutException | NoSuchElementException e) {
+            log.error("None element was found.");
+            throw new RuntimeException("Test has been stopped.", e);
+        }
     }
 }
