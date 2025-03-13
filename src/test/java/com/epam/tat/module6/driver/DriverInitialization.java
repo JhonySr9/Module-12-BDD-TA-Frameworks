@@ -1,12 +1,14 @@
 package com.epam.tat.module6.driver;
 
+import com.epam.tat.module6.utils.HighlightListener;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 
-public class DriverInitialization {
+public class DriverInitialization extends HighlightListener {
 
     private static WebDriver driver;
 
@@ -24,16 +26,19 @@ public class DriverInitialization {
                 case "chrome": {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
+                    driver = new EventFiringDecorator<>(new HighlightListener()).decorate(driver);
                     break;
                 }
                 case "edge": {
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
+                    driver = new EventFiringDecorator<>(new HighlightListener()).decorate(driver);
                     break;
                 }
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
+                    driver = new EventFiringDecorator<>(new HighlightListener()).decorate(driver);
                     break;
                 }
             }

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg" />
+    </listeners>
+    <test name="All">
+        <packages>
+            <package name="com.epam.tat.module6.tests"/>
+        </packages>
+    </test>
+</suite>

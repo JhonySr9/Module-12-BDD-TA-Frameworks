@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 06] Selenium WebDriver - First Version.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/model/CreateCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/TestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/staging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 07] AT Frameworks: Layers, Runner, Business Objects - First Version.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/HighlightListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/tat/module6/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/PurchaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/PurchaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/RegisterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/RegisterTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/DriverInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/driver/DriverInitialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-sanity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/driver/DriverInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/driver/DriverInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/model/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/model/CreateCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 07] AT Frameworks Layers, Runner, Business Objects/Task - AT Frameworks/src/test/resources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jhony/Downloads/Task_AT_Frameworks&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 07] AT Frameworks Layers, Runner, Business Objects\Task - AT Frameworks\src\test\resources" />
@@ -64,13 +52,15 @@
       <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 06] Selenium WebDriver\Task - Selenium WebDriver\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 07] AT Frameworks Layers, Runner, Business Objects\Task - AT Frameworks" />
+      <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 07] AT Frameworks Layers, Runner, Business Objects\Task - AT Frameworks\src\test\resources" />
       <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 07] AT Frameworks Layers, Runner, Business Objects\Task - AT Frameworks\src\main\resources" />
       <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 06] Selenium WebDriver\Task - Selenium WebDriver\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests.existingUserLoginTest">
-    <configuration name="C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 07] AT Frameworks Layers, Runner, Business Objects/Task - AT Frameworks/src/test/resources/test-all.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task - AT Frameworks" />
+  <component name="RunManager" selected="TestNG.C:/Users/jhony/Downloads/Task_AT_Frameworks/src/test/resources/test-all.xml">
+    <configuration name="C:/Users/jhony/Downloads/Task_AT_Frameworks/src/test/resources/test-all.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task_AT_Frameworks" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-all.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
@@ -79,10 +69,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 07] AT Frameworks Layers, Runner, Business Objects/Task - AT Frameworks/src/test/resources/test-regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task - AT Frameworks" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-regression.xml" />
+    <configuration name="C:/Users/jhony/Downloads/Task_AT_Frameworks/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task_AT_Frameworks" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 07] AT Frameworks Layers, Runner, Business Objects/Task - AT Frameworks/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task - AT Frameworks" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.existingUserLoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task_AT_Frameworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.LoginTests" />
+      <option name="METHOD_NAME" value="existingUserLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -107,49 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseTests.completePurchaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task - AT Frameworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.PurchaseTests" />
-      <option name="METHOD_NAME" value="completePurchaseTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PurchaseTests.removeProductInPurchaseFlowTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task - AT Frameworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.PurchaseTests" />
-      <option name="METHOD_NAME" value="removeProductInPurchaseFlowTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_AT_Frameworks/src/test/resources/test-all.xml" />
+        <item itemvalue="TestNG.LoginTests.existingUserLoginTest (1)" />
+        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_AT_Frameworks/testng.xml" />
+        <item itemvalue="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 07] AT Frameworks Layers, Runner, Business Objects/Task - AT Frameworks/testng.xml" />
         <item itemvalue="TestNG.LoginTests.existingUserLoginTest" />
-        <item itemvalue="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 07] AT Frameworks Layers, Runner, Business Objects/Task - AT Frameworks/src/test/resources/test-all.xml" />
-        <item itemvalue="TestNG.PurchaseTests.completePurchaseTest" />
-        <item itemvalue="TestNG.PurchaseTests.removeProductInPurchaseFlowTest" />
-        <item itemvalue="TestNG.C:/Users/jhony/OneDrive - correounivalle.edu.co/Trabajo/EPAM/[Module 07] AT Frameworks Layers, Runner, Business Objects/Task - AT Frameworks/src/test/resources/test-regression.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741500203938</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[Module 07] AT Frameworks: Layers, Runner, Business Objects - First Version.">
+      <created>1741756627550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741756627550</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Module 07] AT Frameworks: Layers, Runner, Business Objects - First Version.">
+      <created>1741756650786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741756650786</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +181,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Module 06] Selenium WebDriver - First Version." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Module 06] Selenium WebDriver - First Version." />
+    <MESSAGE value="[Module 07] AT Frameworks: Layers, Runner, Business Objects - First Version." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Module 07] AT Frameworks: Layers, Runner, Business Objects - First Version." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
