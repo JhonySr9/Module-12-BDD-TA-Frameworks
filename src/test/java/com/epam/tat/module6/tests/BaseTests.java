@@ -1,49 +1,41 @@
 package com.epam.tat.module6.tests;
 
+import com.epam.tat.module6.config.ConfigTestVariables;
+import com.epam.tat.module6.config.InitTestInstances;
+import com.epam.tat.module6.driver.DriverInitialization;
+import com.epam.tat.module6.model.LoggingCustomerDecorator;
 import com.epam.tat.module6.pages.CartPage;
 import com.epam.tat.module6.pages.HomePage;
 import com.epam.tat.module6.pages.OrderPage;
 import com.epam.tat.module6.pages.ProductPage;
-import com.epam.tat.module6.model.Customer;
-import com.epam.tat.module6.driver.DriverInitialization;
-import com.epam.tat.module6.utils.ConfigReader;
-import com.epam.tat.module6.utils.Random;
-import com.epam.tat.module6.utils.TestListener;
-import com.epam.tat.module6.utils.Time;
-import org.apache.logging.log4j.LogManager;
+import com.epam.tat.module6.utils.*;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.*;
 import java.time.Duration;
+
+import static com.epam.tat.module6.config.ConfigTestVariables.*;
+import static com.epam.tat.module6.config.InitTestInstances.*;
 
 @Listeners({TestListener.class})
 public class BaseTests {
 
+    // General Configuration
     public WebDriver driver;
+    protected InitTestInstances testInstances;
+    protected final ConfigTestVariables variables = getVariables();
 
-    // Variable to select the Environment
-    public static String ENVIRONMENT = "dev"; // dev, staging
-    public String HOMEPAGE_URL = ConfigReader.getProperty("BASE_URL");
-    public String BROWSER = ConfigReader.getProperty("BROWSER");
-    public String HEADLESS = ConfigReader.getProperty("HEADLESS");
-    public String VALID_USERNAME = ConfigReader.getProperty("TEST_USER");
-    public String VALID_PASSWORD = ConfigReader.getProperty("TEST_PASSWORD");
-    public int FIRST_PRODUCT_NUMBER = 1;
-    public int SECOND_PRODUCT_NUMBER = 2;
+    // Instances
+    protected Logger log;
+    protected LoggingCustomerDecorator customer;
+    protected Time time;
+    protected Random random;
 
     // Pages
-    public HomePage homePage;
-    public ProductPage productPage;
-    public CartPage cartPage;
-    public OrderPage orderPage;
-
-    // Utils
-    public Time time;
-    public Customer validCustomer;
-    public Random random;
-
-    public final Logger log = LogManager.getRootLogger();
+    protected HomePage homePage;
+    protected ProductPage productPage;
+    protected CartPage cartPage;
+    protected OrderPage orderPage;
 
     /**
      * Sets up global system properties before running the test suite.
@@ -51,26 +43,34 @@ public class BaseTests {
      */
     @BeforeSuite (groups = {"setting"})
     public void setProperties(){
-        System.setProperty("env", ENVIRONMENT);
-        System.setProperty("browser", BROWSER);
-        System.setProperty("headless", HEADLESS);
+        System.setProperty("env", variables.ENVIRONMENT);
+        System.setProperty("browser", variables.BROWSER);
+        System.setProperty("headless", variables.HEADLESS);
     }
 
     @BeforeMethod (groups = "setting")
-    public void setUp(ITestResult result) {
+    public void setUp() {
         driver = DriverInitialization.getDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         driver.manage().window().maximize();
-        driver.get(HOMEPAGE_URL);
-        log.info("----------------");
-        log.info("Starting test: '" + result.getMethod().getMethodName() + "'");
+        driver.get(variables.HOMEPAGE_URL);
+
+        testInstances = getInstances(driver);
+        log = testInstances.log;
+        customer = testInstances.customer;
+        time = testInstances.time;
+        random = testInstances.random;
+
+        testInstances.log.info("----------------");
     }
 
     @AfterMethod (groups = "setting")
-    public void tearDown(ITestResult result) {
+    public void tearDown() {
+        testInstances.log.info("----------------");
+
         DriverInitialization.closeDriver();
-        log.info("Test: '" + result.getMethod().getMethodName() + "', finished successfully.");
-        log.info("----------------");
+        InitTestInstances.removeInstances();
+        ConfigTestVariables.clearVariables();
     }
 
 }

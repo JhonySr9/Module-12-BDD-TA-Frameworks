@@ -1,5 +1,4 @@
 package com.epam.tat.module6.tests;
-import com.epam.tat.module6.pages.HomePage;
 import com.epam.tat.module6.utils.Random;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
@@ -10,7 +9,7 @@ public class RegisterTests extends BaseTests {
     public void userCannotRegisterWithAlreadyRegisteredUser() {
 
         // From the HomePage, click on "Sign up" in the top right corner.
-        homePage = new HomePage(driver);
+        homePage = testInstances.homePage;
         homePage.goToSignUpSection();
         log.info("Moves to SignUp section.");
 
@@ -20,7 +19,7 @@ public class RegisterTests extends BaseTests {
         String randomPassword = random.getARandomPassword();
         homePage.signUp_addUserName(randomUsername);
         homePage.signUp_addPassword(randomPassword);
-        log.info("Enters new Customer credentials to register.");
+        log.info("Enters new CustomerData credentials to register.");
 
         // Click the "Sign up" button.
         homePage.signUp_enterSignUp();

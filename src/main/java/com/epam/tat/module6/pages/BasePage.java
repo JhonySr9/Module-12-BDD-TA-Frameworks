@@ -11,8 +11,7 @@ public class BasePage {
 
     protected final WebDriver driver;
     protected final WebDriverWait wait;
-
-    public final Logger log = LogManager.getRootLogger();
+    protected final Logger log = LogManager.getRootLogger();
 
     protected BasePage (WebDriver driver) {
         this.driver = driver;

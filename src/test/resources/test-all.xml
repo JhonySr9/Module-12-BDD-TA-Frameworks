@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite">
+<suite name="All">
     <test name="All">
         <packages>
             <package name="com.epam.tat.module6.tests"/>

@@ -55,6 +55,14 @@ public class HomePage extends BasePage {
         }
     }
 
+    public String getUsernameDisplayed() {
+        return getText(userNameMessage);
+    }
+
+    public String getSignUpAlertText() {
+        return alert_getAlertText();
+    }
+
     public void login_addUsername(String username) {
         addText(login_usernameTextBar, username);
     }
@@ -83,11 +91,7 @@ public class HomePage extends BasePage {
         alert_acceptAlert();
     }
 
-    public String getUsernameDisplayed() {
-        return getText(userNameMessage);
-    }
-
-    public String getSignUpAlertText() {
+    public String getWrongPasswordAlertText() {
         return alert_getAlertText();
     }
 

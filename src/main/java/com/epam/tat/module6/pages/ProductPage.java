@@ -26,16 +26,16 @@ public class ProductPage extends BasePage {
         click(addCartButton);
     }
 
+    public String getProductName() {
+        return getText(productName);
+    }
+
     public void acceptProductAddedAlert() {
         alert_acceptAlert();
     }
 
     public void clickToMoveToCartSection() {
         click(cartSectionLink);
-    }
-
-    public String getProductName() {
-        return getText(productName);
     }
 
     public void clicktoMoveToHomeSection() {

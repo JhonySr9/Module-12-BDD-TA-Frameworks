@@ -1,12 +1,14 @@
-package com.epam.tat.module6.utils;
+package com.epam.tat.module6.config;
+
+import com.epam.tat.module6.tests.BaseTests;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import static com.epam.tat.module6.tests.BaseTests.ENVIRONMENT;
+import static com.epam.tat.module6.config.ConfigTestVariables.*;
 
-public class ConfigReader {
+public class PropertiesLoader extends BaseTests {
     private static final Properties properties = new Properties();
 
     static {
@@ -15,7 +17,7 @@ public class ConfigReader {
 
     private static void loadProperties() {
         try {
-            String env = System.getProperty("env", ENVIRONMENT).toLowerCase();
+            String env = System.getProperty("env", getVariables().ENVIRONMENT).toLowerCase();
             String filePath = "src/test/resources/" + env + ".properties";
 
             FileInputStream file = new FileInputStream(filePath);

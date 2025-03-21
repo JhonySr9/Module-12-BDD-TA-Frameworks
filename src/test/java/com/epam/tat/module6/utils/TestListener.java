@@ -21,10 +21,23 @@ public class TestListener implements ITestListener {
 
     private static final int MAX_RETRY_COUNT = 1;
 
+    public void onTestStart(ITestResult result) {
+        log.info("Starting test: '" + result.getName() + "'");
+    }
+
     public void onTestFailure(ITestResult result) {
+        if (result.getMethod().isBeforeClassConfiguration()) {
+            log.warn("Configuration has failed (setUp): " + result.getName());
+            return;
+        }
+
         saveScreenshot(result);
         log.error("Test Failed: " + result.getName());
         retryOrSkipTest(result);
+    }
+
+    public void onTestSuccess(ITestResult result) {
+        log.info("Test: '" + result.getName() + "' has finished successfully.");
     }
 
     public boolean retry(ITestResult result) {
@@ -33,6 +46,14 @@ public class TestListener implements ITestListener {
             return true;
         }
         return false;
+    }
+
+    private void retryOrSkipTest(ITestResult result) {
+        if (retry(result)) {
+            result.setStatus(ITestResult.FAILURE); // Mark the test as failed to trigger retry
+        } else {
+            result.setStatus(ITestResult.FAILURE); // If retries exhausted, mark as failure
+        }
     }
 
     private void saveScreenshot(ITestResult result) {
@@ -47,14 +68,6 @@ public class TestListener implements ITestListener {
             log.error("Screenshot of failure has been saved in: " + screenshotPath);
         } catch (IOException e) {
             log.error("Failed to save screenshot: " + e.getLocalizedMessage());
-        }
-    }
-
-    private void retryOrSkipTest(ITestResult result) {
-        if (retry(result)) {
-            result.setStatus(ITestResult.FAILURE); // Mark the test as failed to trigger retry
-        } else {
-            result.setStatus(ITestResult.FAILURE); // If retries exhausted, mark as failure
         }
     }
 
