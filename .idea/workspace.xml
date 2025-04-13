@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 08] Design Patterns in TA Frameworks implementation - Patterns and SOLID principles implementation.">
+    <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener.">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.testng.ITestNGListener" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/reportportal.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-all.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-smoke.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-smoke.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +62,7 @@
       <recent name="com.epam.tat.module6.model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests">
+  <component name="RunManager" selected="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml">
     <configuration name="C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task_Design_Patterns_in_TA_Frameworks" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-all.xml" />
@@ -124,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml" />
+        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.LoginTests.existingUserLoginTest" />
-        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml" />
         <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/testng.xml" />
-        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1742536020871</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools">
+      <created>1744516907841</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744516907841</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +208,8 @@
     <MESSAGE value="[Module 07] AT Frameworks: Layers, Runner, Business Objects - First Version." />
     <MESSAGE value="[Module 07] AT Frameworks: Layers, Runner, Business Objects - Second Version." />
     <MESSAGE value="[Module 08] Design Patterns in TA Frameworks implementation - Patterns and SOLID principles implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Module 08] Design Patterns in TA Frameworks implementation - Patterns and SOLID principles implementation." />
+    <MESSAGE value="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools" />
+    <MESSAGE value="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener." />
   </component>
 </project>

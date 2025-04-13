@@ -59,6 +59,12 @@
             <version>2.29.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>agent-java-testng</artifactId>
+            <version>5.4.6</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -97,21 +103,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <target>
-                                <exec executable="cmd">
-                                    <arg line="/c allure serve"/>
-                                </exec>
-                            </target>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
