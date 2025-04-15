@@ -1,7 +1,6 @@
 package com.epam.tat.module6.driver;
 
-import com.epam.tat.module6.utils.DefaultElementHighlighter;
-import com.epam.tat.module6.utils.HighlightListener;
+import com.epam.tat.module6.utils.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -49,7 +48,14 @@ public class DriverInitialization {
             }
         }
         HighlightListener highlightListener = new HighlightListener(new DefaultElementHighlighter());
-        return new EventFiringDecorator<>(highlightListener).decorate(driver);
+
+        ScreenshotReporter reporter = new ReportPortalListener();
+        ScreenshotReportPortal screenshotListener = new ScreenshotReportPortal(reporter);
+
+        return new EventFiringDecorator<>(
+                screenshotListener,
+                highlightListener
+        ).decorate(driver);  // Returns driver with all listeners
     }
 
     public static void closeDriver(){

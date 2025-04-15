@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener.">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.testng.ITestNGListener" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/reportportal.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/ReportPortalListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/ScreenshotReportPortal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/ScreenshotReporter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-all.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-all.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-regression.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-smoke.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-smoke.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/driver/DriverInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/driver/DriverInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/reportportal.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/reportportal.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,7 +63,7 @@
       <recent name="com.epam.tat.module6.model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml">
+  <component name="RunManager" selected="TestNG.LoginTests.incorrectPasswordTest">
     <configuration name="C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task_Design_Patterns_in_TA_Frameworks" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-all.xml" />
@@ -76,16 +77,6 @@
     <configuration name="C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task_Design_Patterns_in_TA_Frameworks" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-smoke.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task_Design_Patterns_in_TA_Frameworks" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -128,13 +119,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTests.incorrectPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Task_Design_Patterns_in_TA_Frameworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.LoginTests" />
+      <option name="METHOD_NAME" value="incorrectPasswordTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests.incorrectPasswordTest" />
+        <item itemvalue="TestNG.LoginTests.existingUserLoginTest" />
+        <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml" />
         <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.LoginTests.existingUserLoginTest" />
-        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1744516907841</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener.">
+      <created>1744523675535</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744523675535</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
