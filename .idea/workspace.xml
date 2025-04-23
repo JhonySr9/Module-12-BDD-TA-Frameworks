@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener.">
+    <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 12] BDD TA Frameworks - pre version.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/LoginRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LoginSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,7 +42,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -53,10 +59,125 @@
       <recent name="C:\Users\jhony\OneDrive - correounivalle.edu.co\Trabajo\EPAM\[Module 06] Selenium WebDriver\Task - Selenium WebDriver\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="stepDefinitions" />
       <recent name="com.epam.tat.module6.model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests.incorrectPasswordTest">
+  <component name="RunManager" selected="JUnit.LoginRunner">
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Task_Selenium_WebDriver" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Task_Selenium_WebDriver" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login using existing test (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Task_Selenium_WebDriver" />
+      <option name="NAME_FILTER" value="^Login using existing test$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login using existing test$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login using existing test" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login using existing test (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Task_Selenium_WebDriver" />
+      <option name="NAME_FILTER" value="^Login using existing test$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login using existing test$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login using existing test" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login using incorrect password should fail" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Task_Selenium_WebDriver" />
+      <option name="NAME_FILTER" value="^Login using incorrect password should fail$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login using incorrect password should fail$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login using incorrect password should fail" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Task_Selenium_WebDriver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.LoginRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,86 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task_Design_Patterns_in_TA_Frameworks" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-all.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task_Design_Patterns_in_TA_Frameworks" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-smoke.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task_Design_Patterns_in_TA_Frameworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.LoginTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.existingUserLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task_Design_Patterns_in_TA_Frameworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.LoginTests" />
-      <option name="METHOD_NAME" value="existingUserLoginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.incorrectPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Task_Design_Patterns_in_TA_Frameworks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.tat.module6.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.epam.tat.module6.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.tat.module6.tests.LoginTests" />
-      <option name="METHOD_NAME" value="incorrectPasswordTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTests.incorrectPasswordTest" />
-        <item itemvalue="TestNG.LoginTests.existingUserLoginTest" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-smoke.xml" />
-        <item itemvalue="TestNG.C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" />
+        <item itemvalue="JUnit.LoginRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Login using incorrect password should fail" />
+        <item itemvalue="Cucumber Java.Scenario: Login using existing test (2)" />
+        <item itemvalue="Cucumber Java.Feature: login" />
+        <item itemvalue="Cucumber Java.Scenario: Login using existing test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1744523675535</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[Module 12] BDD TA Frameworks - pre version.">
+      <created>1745379075855</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745379075855</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +285,7 @@
     <MESSAGE value="[Module 08] Design Patterns in TA Frameworks implementation - Patterns and SOLID principles implementation." />
     <MESSAGE value="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools" />
     <MESSAGE value="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener." />
+    <MESSAGE value="[Module 12] BDD TA Frameworks - pre version." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Module 12] BDD TA Frameworks - pre version." />
   </component>
 </project>
