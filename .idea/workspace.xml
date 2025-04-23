@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d66531e6-dce9-4e65-9a9c-bd1e7be8867a" name="Changes" comment="[Module 11] Results Analysis and Reporting in TA. Integration with reporting tools - Added ReportPortal Listener.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/ReportPortalListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/ScreenshotReportPortal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/ScreenshotReporter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/driver/DriverInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/driver/DriverInitialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/tat/module6/utils/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/reportportal.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/reportportal.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +57,17 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.LoginTests.incorrectPasswordTest">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/jhony/Downloads/Task_Design_Patterns_in_TA_Frameworks/src/test/resources/test-all.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Task_Design_Patterns_in_TA_Frameworks" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/test-all.xml" />
