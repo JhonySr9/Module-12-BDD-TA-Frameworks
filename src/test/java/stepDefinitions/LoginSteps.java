@@ -9,13 +9,14 @@ public class LoginSteps {
 
     @Given("I am in the homepage")
     public void i_am_in_the_homepage() {
-        // From the HomePage, click on "Log in" in the top right corner.
         homePage = testInstances.homePage;
-        homePage.goToLoginSection();
-        log.info("Enters the login section.");
     }
     @When("I enter valid username {string} and password {string}")
     public void i_enter_valid_username_and_password(String userName, String password) {
+        // From the HomePage, click on "Log in" in the top right corner.
+        homePage.goToLoginSection();
+        log.info("Enters the login section.");
+
         // Enter valid credentials.
         homePage.login_addUsername(userName);
         homePage.login_addPassword(password);
@@ -28,15 +29,19 @@ public class LoginSteps {
         log.info("Clicks on LoginButton.");
     }
 
-    @When("I enter a valid username {string} with a random password")
+    @When("^I enter a valid username \"([^\"]*)\" with a random password$")
     public void i_enter_a_valid_username_with_a_random_password(String userName) {
+        // From the HomePage, click on "Log in" in the top right corner.
+        homePage.goToLoginSection();
+        log.info("Enters the login section.");
+
         // Enter valid username, but a wrong password.
         homePage.login_addUsername(userName);
         homePage.login_addPassword(random.getARandomPassword());
         log.info("Enters credentials wrong credentials.");
     }
 
-    @Then("Welcome message with my username {string} should be displayed")
+    @Then("^Welcome message with my username \"([^\"]*)\" should be displayed$")
     public void welcome_message_with_my_username_should_be_displayed(String userName) {
         String userNameDisplayed = homePage.getUsernameDisplayed();
         assertEquals(userNameDisplayed, "Welcome " + userName);

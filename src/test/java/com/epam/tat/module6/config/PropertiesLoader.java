@@ -1,14 +1,12 @@
 package com.epam.tat.module6.config;
 
-import com.epam.tat.module6.tests.BaseTests;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 import static com.epam.tat.module6.config.ConfigTestVariables.*;
 
-public class PropertiesLoader extends BaseTests {
+public class PropertiesLoader {
     private static final Properties properties = new Properties();
 
     static {
